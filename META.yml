@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Test-Trivial
-version:            1.6
+version:            1.6_01
 abstract:           ~
 author:
     - Cory Bennett <cpan@corybennett.org>
