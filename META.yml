@@ -1,0 +1,25 @@
+--- #YAML:1.0
+name:               Test-Trivial
+version:            1.6
+abstract:           ~
+author:
+    - Cory Bennett <cpan@corybennett.org>
+license:            Artisitic License
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:
+    Filter::Simple:  0
+    Regexp::Common:  0
+    Test::More:      0
+    Text::Diff:      0
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.56
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
