@@ -33,6 +33,7 @@
       "runtime" : {
          "requires" : {
             "Filter::Simple" : 0,
+            "IO::Scalar" : 0,
             "Regexp::Common" : 0,
             "Test::More" : 0,
             "Text::Diff" : 0
@@ -40,5 +41,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "1.7"
+   "version" : "1.8"
 }
