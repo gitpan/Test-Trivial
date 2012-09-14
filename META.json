@@ -34,6 +34,7 @@
          "requires" : {
             "Filter::Simple" : 0,
             "IO::Scalar" : 0,
+            "IO::Tee" : 0,
             "Regexp::Common" : 0,
             "Test::More" : 0,
             "Text::Diff" : 0
@@ -41,5 +42,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "1.8"
+   "version" : "1.9"
 }
