@@ -15,7 +15,7 @@ use File::Basename;
 use constant IFS => $/;
 
 our $VERSION;
-$VERSION = "1.9";
+$VERSION = "1.10";
 $VERSION = eval $VERSION;
 
 FILTER {
@@ -389,6 +389,9 @@ sub line_to_text {
         local $/ = IFS;
         my $io = IO::Handle->new();
         my $fn = $file eq '-e' ? "/proc/$$/cmdline" : $file;
+        $fn = $0 unless -e $fn;
+        $fn = "$ENV{PWD}/$0" unless -e $fn;
+        $fn = "$ENV{PWD}/$ENV{_}" unless -e $fn;
         open($io, "$fn") or die "Could not open $file: $!";
         my @source = <$io>;
         $file_cache{$file} = \@source;
