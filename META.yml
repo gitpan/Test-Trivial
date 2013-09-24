@@ -24,4 +24,4 @@ requires:
   Regexp::Common: 0
   Test::More: 0
   Text::Diff: 0
-version: v1.901.1
+version: v1.901.2
